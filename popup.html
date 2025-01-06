@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter Settings</title>
+    <style>
+        body {
+            width: 250px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        .setting-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .save-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .save-btn:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="setting-group">
+        <label for="currency-select">Target Currency:</label>
+        <select id="currency-select">
+            <option value="EUR">€ Euro</option>
+            <option value="USD">$ US Dollar</option>
+            <option value="GBP">£ British Pound</option>
+            <option value="JPY">¥ Japanese Yen</option>
+            <option value="CAD">CA$ Canadian Dollar</option>
+            <option value="AUD">A$ Australian Dollar</option>
+        </select>
+    </div>
+
+    <div class="setting-group">
+        <label for="api-key">Exchange Rate API Key:</label>
+        <input type="text" id="api-key" placeholder="Enter your API key">
+        <small>Get your API key from <a href="https://www.exchangerate-api.com/" target="_blank">exchangerate-api.com</a></small>
+        <div id="api-status" class="api-status">
+            <span class="status-icon"></span>
+            <span class="status-text"></span>
+        </div>
+    </div>
+
+    <button class="save-btn" id="save-settings">Save Settings</button>
+
+    <script src="popup.js"></script>
+</body>
+</html> 
