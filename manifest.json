@@ -3,7 +3,7 @@
     "name": "Currency Converter",
     "version": "1.0",
     "description": "A currency converter extension with VAT and shipping calculations",
-    "homepage_url": "https://yourwebsite.com",
+    "homepage_url": "https://github.com/Stellanis/LTT-cost-calculator",
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -27,7 +27,6 @@
         "matches": ["<all_urls>"],
         "js": ["content.js"]
     }],
-    "privacy_policy": "https://yourwebsite.com/privacy-policy.html",
     "content_security_policy": {
         "extension_pages": "script-src 'self'; object-src 'self'"
     },
